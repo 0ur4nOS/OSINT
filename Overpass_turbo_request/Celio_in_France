@@ -1,3 +1,4 @@
+//Use https://www.wikidata.org/wiki/Q2672003
 [out:json][timeout:25];
 {{geocodeArea:France}}->.searchArea;
 (

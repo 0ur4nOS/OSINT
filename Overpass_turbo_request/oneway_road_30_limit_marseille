@@ -1,0 +1,7 @@
+//Extract one-way roads with speed limits of 30 km/h in Marseille
+[out:json][timeout:25];
+{{geocodeArea:marseille}}->.searchArea;
+way ["highway"] ["oneway"="yes"] ["maxspeed"="30"](area.searchArea);
+out body;
+>;
+out skel qt;
